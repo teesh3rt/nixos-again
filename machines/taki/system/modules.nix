@@ -9,5 +9,6 @@
     ../../../modules/system/generic/styling.nix
     ../../../modules/system/apps/ghostty.nix
     ../../../modules/system/apps/git.nix
+    ../../../modules/system/apps/discord.nix
   ];
 }
