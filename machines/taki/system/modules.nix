@@ -7,6 +7,7 @@
     ../../../modules/system/apps/element.nix
     ../../../modules/system/apps/helix.nix
     ../../../modules/system/generic/styling.nix
+    ../../../modules/system/generic/audio.nix
     ../../../modules/system/apps/ghostty.nix
     ../../../modules/system/apps/git.nix
     ../../../modules/system/apps/discord.nix
