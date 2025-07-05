@@ -13,6 +13,7 @@
     ../../../modules/system/apps/discord.nix
     ../../../modules/system/apps/firefox.nix
     ../../../modules/system/wm/gnome.nix
+    ../../../modules/system/wm/hyprland.nix
     ../../../modules/system/dm/gdm.nix
     ../../../modules/system/generic/laptop.nix
   ];
