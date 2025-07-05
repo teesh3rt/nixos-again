@@ -16,5 +16,6 @@
     ../../../modules/system/wm/hyprland.nix
     ../../../modules/system/dm/gdm.nix
     ../../../modules/system/generic/laptop.nix
+    ../../../modules/system/apps/prism.nix
   ];
 }
