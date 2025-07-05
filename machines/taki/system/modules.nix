@@ -11,5 +11,8 @@
     ../../../modules/system/apps/ghostty.nix
     ../../../modules/system/apps/git.nix
     ../../../modules/system/apps/discord.nix
+    ../../../modules/system/apps/firefox.nix
+    ../../../modules/system/wm/gnome.nix
+    ../../../modules/system/dm/gdm.nix
   ];
 }
