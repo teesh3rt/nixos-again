@@ -64,6 +64,8 @@ in
       monitor = "eDP-1, 2048x1280@120, 0x0, 1";
       input = {
         natural_scroll = true;
+        kb_layout = "us,il";
+        kb_options = "grp:alt_shift_toggle";
       };
     };
   };
