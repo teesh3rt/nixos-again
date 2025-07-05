@@ -9,9 +9,11 @@
 
     stylix.url = "github:nix-community/stylix/release-25.05";
     stylix.inputs.nixpkgs.follows = "nixpkgs";
+
+    bcdl.url = "github:teesh3rt/bandcamp-dl-flake";
   };
 
-  outputs = { self, nixpkgs, home-manager, stylix }: {
+  outputs = { self, nixpkgs, home-manager, stylix, bcdl }: {
     nixosConfigurations.taki = nixpkgs.lib.nixosSystem {
       modules = [
         ./machines/taki/system/configuration.nix
@@ -19,6 +21,8 @@
         stylix.nixosModules.stylix
 
         {
+          environment.systemPackages = [ bcdl.packages.x86_64-linux.default ];
+        
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
           home-manager.users.ilay = ./machines/taki/home/home.nix;
