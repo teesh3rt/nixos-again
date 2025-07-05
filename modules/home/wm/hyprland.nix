@@ -29,6 +29,8 @@ let
     windowSwapping
   ];
 
+  screenshot = ''${pkgs.grim}/bin/grim -g "$(${pkgs.slurp}/bin/slurp)" - | ${pkgs.wl-clipboard}/bin/wl-copy'';
+  
   cursor = {
     enable = true;
     package = pkgs.bibata-cursors;
@@ -49,14 +51,20 @@ in
       ];
       exec-once = [
         "${pkgs.hyprpaper}/bin/hyprpaper"
+        "${pkgs.mako}/bin/mako"
       ];
       bind = [
         "${mod}, Return, exec, ${pkgs.ghostty}/bin/ghostty"
         "${mod}, Q, killactive"
         "${mod}, D, exec, ${pkgs.fuzzel}/bin/fuzzel"
+        "${mod} SHIFT, S, exec, ${screenshot}"
         "${mod} SHIFT, P, exit"
+        "${mod} SHIFT, D, exec, ${pkgs.mako}/bin/makoctl dismiss -a"
       ] ++ bindAdditions;
       monitor = "eDP-1, 2048x1280@120, 0x0, 1";
+      input = {
+        natural_scroll = true;
+      };
     };
   };
 }
