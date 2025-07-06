@@ -19,5 +19,6 @@
     ../../../modules/system/apps/prism.nix
     ../../../modules/system/apps/eza.nix
     ../../../modules/system/generic/starship.nix
+    ../../../modules/system/apps/nh.nix
   ];
 }
