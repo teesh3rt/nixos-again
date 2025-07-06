@@ -10,5 +10,6 @@
     ../../../modules/home/wm/hyprland.nix
     ../../../modules/home/apps/fuzzel.nix
     ../../../modules/home/services/mpd.nix
+    ../../../modules/home/services/syncthing.nix
   ];
 }
