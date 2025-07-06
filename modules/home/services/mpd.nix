@@ -13,4 +13,6 @@
     network.listenAddress = "any";
     network.startWhenNeeded = true;
   };
+
+  programs.ncmpcpp.enable = true;
 }
