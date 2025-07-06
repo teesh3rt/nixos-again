@@ -9,5 +9,6 @@
     ../../../modules/home/apps/mako.nix
     ../../../modules/home/wm/hyprland.nix
     ../../../modules/home/apps/fuzzel.nix
+    ../../../modules/home/services/mpd.nix
   ];
 }
