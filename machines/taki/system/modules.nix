@@ -21,6 +21,7 @@
     ../../../modules/system/generic/starship.nix
     ../../../modules/system/apps/nh.nix
     ../../../modules/system/apps/zoxide.nix
+    ../../../modules/system/apps/zellij.nix
     ../../../modules/system/shells/fish.nix
   ];
 }
