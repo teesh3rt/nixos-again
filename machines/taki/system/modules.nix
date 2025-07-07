@@ -22,6 +22,7 @@
     ../../../modules/system/apps/nh.nix
     ../../../modules/system/apps/zoxide.nix
     ../../../modules/system/apps/zellij.nix
+    ../../../modules/system/apps/bat.nix
     ../../../modules/system/shells/fish.nix
   ];
 }

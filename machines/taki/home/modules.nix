@@ -10,6 +10,7 @@
     ../../../modules/home/wm/hyprland.nix
     ../../../modules/home/apps/fuzzel.nix
     ../../../modules/home/apps/zellij.nix
+    ../../../modules/home/apps/bat.nix
     ../../../modules/home/services/mpd.nix
     ../../../modules/home/services/syncthing.nix
   ];
