@@ -5,6 +5,7 @@
     enable = true;
     aliases = {
       "glog" = "log --oneline --graph";
+      "st" = "status";
     };
     userName = "teesh3rt";
     userEmail = "ilaylevy611@gmail.com";
