@@ -14,5 +14,6 @@
     ../../../modules/home/apps/kitty.nix
     ../../../modules/home/services/mpd.nix
     ../../../modules/home/services/syncthing.nix
+    ../../../modules/home/services/udiskie.nix
   ];
 }
