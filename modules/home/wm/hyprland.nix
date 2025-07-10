@@ -53,6 +53,7 @@ in
       exec-once = [
         "${pkgs.hyprpaper}/bin/hyprpaper"
         "${pkgs.mako}/bin/mako"
+        "${pkgs.waybar}/bin/waybar &"
       ];
       bind = [
         "${mod}, Return, exec, ${terminal}"
