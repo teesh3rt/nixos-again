@@ -2,6 +2,7 @@
 
 let
   mod = "SUPER";
+  terminal = "${pkgs.kitty}/bin/kitty";
 
   gen10 = bind: action:
     builtins.genList
@@ -54,7 +55,7 @@ in
         "${pkgs.mako}/bin/mako"
       ];
       bind = [
-        "${mod}, Return, exec, ${pkgs.ghostty}/bin/ghostty"
+        "${mod}, Return, exec, ${terminal}"
         "${mod}, Q, killactive"
         "${mod}, D, exec, ${pkgs.fuzzel}/bin/fuzzel"
         "${mod} SHIFT, S, exec, ${screenshot}"

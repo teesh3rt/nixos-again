@@ -24,5 +24,6 @@
     ../../../modules/system/apps/zellij.nix
     ../../../modules/system/apps/bat.nix
     ../../../modules/system/shells/fish.nix
+    ../../../modules/system/apps/kitty.nix
   ];
 }
