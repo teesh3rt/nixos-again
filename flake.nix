@@ -11,14 +11,18 @@
     stylix.inputs.nixpkgs.follows = "nixpkgs";
 
     bcdl.url = "github:teesh3rt/bandcamp-dl-flake";
+
+    spicetify.url = "github:Gerg-L/spicetify-nix";
   };
 
-  outputs = { self, nixpkgs, home-manager, stylix, bcdl }: {
+  outputs = { self, nixpkgs, home-manager, stylix, bcdl, spicetify }@inputs: {
     nixosConfigurations.taki = nixpkgs.lib.nixosSystem {
+      specialArgs = { inherit inputs; };
       modules = [
         ./machines/taki/system/configuration.nix
         home-manager.nixosModules.home-manager
         stylix.nixosModules.stylix
+        spicetify.nixosModules.spicetify
 
         {
           environment.systemPackages = [ bcdl.packages.x86_64-linux.default ];

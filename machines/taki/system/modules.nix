@@ -23,6 +23,7 @@
     ../../../modules/system/apps/zoxide.nix
     ../../../modules/system/apps/zellij.nix
     ../../../modules/system/apps/bat.nix
+    ../../../modules/system/apps/spotify.nix
     ../../../modules/system/shells/fish.nix
     ../../../modules/system/apps/kitty.nix
   ];
